@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
 const db = require("../index")
-const defaultPic = require("../../../default.jpg")
+
 
 
 const Project = db.define("project", {
@@ -9,7 +9,7 @@ const Project = db.define("project", {
   },
   imageUrl:{
     type: Sequelize.STRING,
-    defaultValue: defaultPic
+
   }
 });
 
