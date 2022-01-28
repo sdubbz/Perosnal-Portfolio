@@ -1,5 +1,8 @@
-const dbConnection = require("./database");
+const {dbConnection} = require("./database");
+const Projects = require("./projects")
 
+
+console.log(dbConnection)
 const runSeed = async () => {
 
 

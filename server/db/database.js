@@ -1,14 +1,9 @@
 const Sequelize = require("sequelize");
-const Project = require("./models/projects")
+
+const dbConnection = new Sequelize("postgres://localhost:5432/portfolio");
 
 
-
-const db = new Sequelize( "postgres://localhost:5432/portfolio");
-
-console.log(db)
-
-
-// const Project = dbConnection.define("project", {
+// const Projects = dbConnection.define('project', {
 //   title:{
 //     type: Sequelize.STRING,
 //   },
@@ -18,4 +13,5 @@ console.log(db)
 //   }
 // });
 
-module.exports = db;
+console.log(dbConnection)
+module.exports ={ dbConnection};
