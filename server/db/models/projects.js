@@ -1,8 +1,9 @@
 const Sequelize = require("sequelize");
-const db = require("../index")
+
+const db = require("../database")
 
 
-
+console.log(db)
 const Project = db.define("project", {
   title:{
     type: Sequelize.STRING,
