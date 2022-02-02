@@ -3,7 +3,7 @@ const app = express();
 
 const port = 8080;
 
-const dbConnection = require("./db/database");
+const {dbConnection} = require("./db/database");
 
 
 const startServer = async () => {

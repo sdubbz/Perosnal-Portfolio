@@ -3,7 +3,7 @@ const Sequelize = require("sequelize");
 const {dbConnection} = require("./database")
 
 
-console.log(dbConnection.define)
+
 
 const Projects = dbConnection.define('project', {
   title:{
@@ -15,5 +15,5 @@ const Projects = dbConnection.define('project', {
   }
 });
 
-console.log(Projects)
+
 module.exports = Projects;
