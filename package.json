@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/sdubbz/Personal-Portfolio#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "express": "^4.17.2",
+    "morgan": "^1.10.0",
     "pg": "^8.7.1",
     "react": "^17.0.2",
+    "save": "^2.4.0",
     "sequelize": "^6.14.1"
   },
   "devDependencies": {
